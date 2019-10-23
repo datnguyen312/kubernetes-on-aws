@@ -18,7 +18,7 @@ data:
 {{ if eq .ConfigItems.enable_skipper_eastwest "true"}}
         template IN A ingress.cluster.local  {
             match "^.*[.]ingress[.]cluster[.]local"
-            answer "{{"{{"}} .Name {{"}}"}} 60 IN A 10.36.0.99"
+            answer "{{"{{"}} .Name {{"}}"}} 60 IN A 10.3.99.99"
             fallthrough
         }
 {{ end }}
